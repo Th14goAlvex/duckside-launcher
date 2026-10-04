@@ -1,0 +1,32 @@
+name: Relatar problema
+description: Conte o que não funcionou para ajudar a equipe a reproduzir.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: expected
+    attributes:
+      label: O que você esperava?
+      description: Descreva o resultado esperado.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: O que aconteceu?
+      description: Inclua mensagens de erro, se houver. Não envie senhas, tokens ou Steam tickets.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versão do launcher
+      placeholder: 0.1.3
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Versão do Windows
+    validations:
+      required: false

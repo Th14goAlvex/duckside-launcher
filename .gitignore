@@ -1,0 +1,24 @@
+# Dependencies and build output
+node_modules/
+dist/
+release/
+work/
+
+# Local settings and credentials
+.env
+.env.*
+!.env.example
+backend/.env
+
+# Runtime data (never commit accounts, sessions, uploads, or server state)
+backend/data/store.json
+backend/data/accounts.sqlite*
+backend/data/updates/
+backend/data/media/
+
+# Logs and editor/OS files
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

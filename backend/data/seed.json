@@ -1,0 +1,6 @@
+{
+  "content":{"eyebrow":"TEMPORADA 01 · AO VIVO","title":"SEU RP.\nEM OUTRA DIMENSÃO.","description":"Project Zomboid RP em 3D. Entre no mundo, construa sua história e sobreviva junto com a comunidade brasileira.","playText":"JOGAR AGORA","note":"A versão do jogo e os mods serão verificados automaticamente.","updateTitle":"ATUALIZAÇÕES","updateName":"Pacote 3D RP","updateVersion":"v1.0.4","updateDescription":"Mods e Java prontos","announcementLabel":"NOVIDADE DUCKSIDE","announcementSkipText":"PULAR","announcementNewsText":"VER NOVIDADES","homeBackgroundVideo":null},
+  "server":{"name":"Duckside RP 3D","online":true,"playerCount":142,"maxPlayers":250,"pingMs":32,"lastHeartbeat":"2026-10-04T12:00:00.000Z"},
+  "characters":{},
+  "news":[{"id":"lancamento","date":"04 OUT 2026","title":"Duckside RP 3D está chegando","body":"Um novo modo de viver histórias em Project Zomboid, com o pacote visual 3D e uma cidade pronta para o seu RP.","image":null}]
+}

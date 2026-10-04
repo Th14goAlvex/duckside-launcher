@@ -1,0 +1,17 @@
+name: Sugerir melhoria
+description: Compartilhe uma ideia para o launcher ou para a integração RP.
+title: "[Ideia]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Que necessidade isso resolveria?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Como você imagina a solução?
+    validations:
+      required: true

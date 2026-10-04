@@ -1,0 +1,73 @@
+{
+  "name": "duckside-launcher",
+  "productName": "Duckside Launcher",
+  "version": "0.1.3",
+  "description": "Launcher oficial do Duckside Studios para Project Zomboid RP.",
+  "main": "desktop/main.cjs",
+  "author": "Duckside Studios",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Th14goAlvex/duckside-launcher.git"
+  },
+  "homepage": "https://github.com/Th14goAlvex/duckside-launcher#readme",
+  "bugs": {
+    "url": "https://github.com/Th14goAlvex/duckside-launcher/issues"
+  },
+  "scripts": {
+    "start": "electron .",
+    "dist:win": "electron-builder --win nsis",
+    "check": "node --check desktop/main.cjs && node --check desktop/preload.cjs && node --check app.js"
+  },
+  "devDependencies": {
+    "electron": "^44.5.1",
+    "electron-builder": "^26.15.3"
+  },
+  "build": {
+    "appId": "com.ducksidestudios.launcher",
+    "productName": "Duckside Launcher",
+    "artifactName": "Duckside-Launcher-Setup-${version}.${ext}",
+    "asar": true,
+    "files": [
+      "index.html",
+      "styles.css",
+      "launcher-overrides.css",
+      "app.js",
+      "assets/**/*",
+      "desktop/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "protocols": [
+      {
+        "name": "Duckside Steam Authentication",
+        "schemes": ["duckside-launcher"]
+      }
+    ],
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Duckside Launcher"
+    },
+    "publish": [
+      {
+        "provider": "generic",
+        "url": "https://api.ducksidestudios.com/v1/public/updates/launcher/"
+      }
+    ]
+  },
+  "dependencies": {
+    "electron-updater": "^6.8.9"
+  }
+}

@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Segurança
+    url: https://github.com/Th14goAlvex/duckside-launcher/security/advisories/new
+    about: Não publique vulnerabilidades de segurança em issues públicas.
